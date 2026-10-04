@@ -40,10 +40,10 @@ export function Footer() {
             <Link to={v2 ? v2BoardHref() : demo ? v2BoardHref() : "/v1"} className="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed">
               {v2 ? "V2 Task Board" : "Live Task Board"}
             </Link>
-            <Link to={v2 ? v2CreateHref() : "/tasks/new"} className="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed">
+            <Link to={v2 || demo ? v2CreateHref() : "/tasks/new"} className="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed">
               {v2 ? "V2 Create Task" : "Live Create Task"}
             </Link>
-            <Link to={v2 ? v2LibraryHref() : "/library"} className="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed">
+            <Link to={v2 || demo ? v2LibraryHref() : "/library"} className="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed">
               {v2 ? "V2 String Library" : "Live string library"}
             </Link>
             {!v2 && !demo ? <Link to={v2BoardHref()} className="font-body-md text-body-md text-tertiary-fixed hover:underline">V2 product app</Link> : null}

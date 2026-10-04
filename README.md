@@ -2,7 +2,7 @@
 
 Vite + React UI for a translation-bounty intelligent contract on **GenLayer Studio Devnet** (`61997`).
 
-**The public landing page `/` opens the deployed V2 app at `/v2`.** The historical V1 board remains at `/v1`; its task URLs remain under `/tasks/...`. The original Stitch demo remains isolated under `/demo`.
+**Live app: [localebounty.vercel.app](https://localebounty.vercel.app/).** The public landing page `/` opens the deployed V2 app at `/v2`. The historical V1 board remains at `/v1`; its task URLs remain under `/tasks/...`. The original Stitch demo remains isolated under `/demo`.
 
 The six V2 product screens — Task Board, Create Task, Task Detail, Submit Translation, Validation & Decision, String Library — read and write the deployed V2 contract. The demo never mixes with live task or wallet tracking.
 
@@ -156,15 +156,7 @@ Details: [`docs/BACKEND_HANDOFF.md`](docs/BACKEND_HANDOFF.md).
 
 ## Static hosting
 
-Build with `npm run build` and publish `dist/`. The repository includes `vercel.json` for Vercel and `public/_redirects` for Netlify so direct loads of `/v2/tasks/:id/decision` serve the SPA. Configure `VITE_WALLETCONNECT_PROJECT_ID` during the host build if WalletConnect is needed. After deployment, check `/`, a direct V2 decision deep link, `/v2/library`, `/v1`, and `/demo` on the hosted domain. No hosted-domain check has been completed yet.
-
-## Static hosting
-
-Build with `npm run build` and publish `dist/`. The repository includes `vercel.json` for Vercel and `public/_redirects` for Netlify so direct loads of `/v2/tasks/:id/decision` serve the SPA. Configure `VITE_WALLETCONNECT_PROJECT_ID` during the host build if WalletConnect is needed. After deployment, check `/`, a direct V2 decision deep link, `/v2/library`, `/v1`, and `/demo` on the hosted domain. No hosted-domain check has been completed yet.
-
-## Static hosting
-
-Build with `npm run build` and publish `dist/`. The repository includes `vercel.json` for Vercel and `public/_redirects` for Netlify so direct loads of `/v2/tasks/:id/decision` serve the SPA. Configure `VITE_WALLETCONNECT_PROJECT_ID` during the host build if WalletConnect is needed. After deployment, check `/`, a direct V2 decision deep link, `/v2/library`, `/v1`, and `/demo` on the hosted domain. No hosted-domain check has been completed yet.
+Build with `npm run build` and publish `dist/`. The repository includes `vercel.json` for Vercel and `public/_redirects` for Netlify so direct loads of `/v2/tasks/:id/decision` serve the SPA. Configure `VITE_WALLETCONNECT_PROJECT_ID` during the host build if WalletConnect is needed. On the production domain, `/` redirected to the V2 board and read three live tasks; the direct V2 decision deep link loaded the approved contract state. `/v2/library` loaded the approved Spanish version; `/v1` and `/demo` loaded their separate boards. Vercel's GitHub integration has not been granted access to this new repository, so the initial release was deployed with the Vercel CLI. Future GitHub pushes require a manual Vercel deploy until Git auto-deploy is connected.
 
 ## Build
 
@@ -176,8 +168,6 @@ npm test
 Read-only check of archived public Decision evidence. Three conclusions: (1) archived JSON arithmetic, (2) historical wallet-run label, (3) independent RPC replay. HTTP 403 leaves (3) UNPROVEN and does not erase (2). Exit 2 is UNPROVEN replay, not a live pass.
 
 ```powershell
-python scripts/verify_v2_release_evidence.py
-python scripts/verify_v2_release_evidence.py
 python scripts/verify_v2_release_evidence.py
 python scripts/verify_archived_public_evidence.py
 pytest tests/direct tests/integration -q

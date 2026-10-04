@@ -166,6 +166,13 @@ export function V2Decision() {
         <p className="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
           Copy JSON exports only hashes, snapshots, receipts, child credits, and library entries stored in this signing browser for this V2 task. Missing values are omitted, not inferred.
         </p>
+        {task.task_id.toLowerCase() === "7e1974679cc5f3423573e8cf52b2446ed2a3de6bf4ad5415054f8532bf2c6352" ? (
+          <p className="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+            Historical signing-browser proof for this exact task is archived in the{" "}
+            <a className="underline text-primary" href="https://github.com/edwarderlick/localebounty/blob/ed8706f69b2810f99a503e9a21f98b6c7c2f7905/docs/evidence/2026-10-03-v2-approved-decision-copy-evidence.json" target="_blank" rel="noopener noreferrer">V2 evidence JSON</a>.
+            Its SHA-256 is EA2D071FB84DC3363CE93FA3F31CAA926EE822B74ACEFACA42B76DE3B39D2FBC. This browser’s evidence fields remain independent and may be UNPROVEN without the original signing snapshots.
+          </p>
+        ) : null}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
           <Cell title="Transaction status" value={settled.transactionStatus} />
           <Cell title="Execution result" value={settled.execution} />

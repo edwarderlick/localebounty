@@ -37,7 +37,7 @@ The older [pending summary](evidence/2026-10-03-v2-approved-decision-evidence.PE
 | Direct/integration Python suite | PASS: 67 passed, 1 skipped (live RPC) |
 | Read-only local browser | V2 board and library loaded live records; no wallet action repeated |
 
-Static hosting fallback files are `vercel.json` and `public/_redirects`. The final hosted domain still needs a direct deep-link load check. WalletConnect's public project ID must be set in the host **build** environment to show that option.
+Production is [localebounty.vercel.app](https://localebounty.vercel.app/). The hosted `/` redirected to `/v2` and loaded three live task rows. The direct approved-task decision deep link loaded the stored approved state. `vercel.json` and `public/_redirects` provide SPA fallback. The user-provided public WalletConnect project ID is set in the Vercel production build environment; QR display on this final domain and mobile pairing have not been re-tested. Vercel Git integration could not connect to the new repository, so this deployment used the CLI; future pushes need a manual deploy until Git access is granted.
 
 ## Disclosures
 
@@ -46,7 +46,7 @@ Static hosting fallback files are `vercel.json` and `public/_redirects`. The fin
 - WalletConnect QR display was checked; mobile pairing, network switch, and disconnect remain **untested**.
 - Independent historical Studio-dev RPC replay remains **UNPROVEN** because of HTTP 403; the signing-browser export is preserved as historical evidence.
 - Library pagination past 50 and malformed RPC pages are unit-tested but not live-scale tested.
-- Hosted-domain behavior remains to be checked after deployment.
+- A production read-only check covered `/`, the approved decision deep link, `/v2/library`, `/v1`, and `/demo`. WalletConnect pairing and wallet signing on the hosted domain remain to be checked.
 
 The [steward review matrix](STEWARDS_REVIEW_MATRIX.md) maps prior project feedback to V2 code, tests, and evidence. It is a preparation aid, not a promise of a review outcome.
 
