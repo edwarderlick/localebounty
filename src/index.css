@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+
+  body {
+    overscroll-behavior: none;
+    background: #fdf9ef;
+  }
+
+  ::selection {
+    background: #a63500;
+    color: #ffffff;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
+  font-size: 1.125rem;
+  line-height: 1;
+  user-select: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}

@@ -1,0 +1,156 @@
+{
+  "label": "LocaleBounty Studio-dev EOA settlement — independent public verification",
+  "verified_at_utc": "2026-09-30",
+  "copy_evidence_json_from_ui": {
+    "pasted_in_prompt": false,
+    "prompt_body": "[PASTE THE EXACT “COPY EVIDENCE” JSON HERE]",
+    "note": "The Backend Step 2 prompt contained a placeholder, not the Live Settlement Test Copy evidence payload. This artifact is an independent Studio-dev RPC verification of the public deploy/lock/release/refund transactions. Private before/after wallet snapshots from the UI session are not invented here."
+  },
+  "network": {
+    "name": "GenLayer Studio Devnet",
+    "chainId": 61997,
+    "rpc": "https://studio-dev.genlayer.com/api",
+    "explorer": "https://explorer-studio-dev.genlayer.com"
+  },
+  "probe": {
+    "source_path": "contracts/experimental/settlement_probe.py",
+    "source_sha256": "93bd2a7539040a2625d12d7d1a942c8a6f84dd8fb9c96ef7a6b96b8b72647cff",
+    "source_bytes": 4986,
+    "runner": "py-genlayer:5jycge4q8k23462jtb0b9fyey1s9qz928sz2nbrd9mg4sxqg2qng",
+    "class": "gl.contract.Contract",
+    "payout_api": "gl.evm.contract_interface.emit_transfer",
+    "payout_channel": "eoa_external_eth_send",
+    "deployed_source_verified": true,
+    "deployed_source_rpc_method": "gen_getContractCode",
+    "deployed_source_encoding": "base64",
+    "deployed_source_sha256_matches_local_for_both_instances": true
+  },
+  "lock_wei": "1000000000000000",
+  "funder": "0x31e14df3b4f47F2428F3B78E7279691A78f70a05",
+  "named_recipient": "0x7E4E1f7DcC3DA063F9110477Ad348C90E8599253",
+  "historical_python_script": {
+    "path": "scripts/studio_dev_settlement_probe.py",
+    "note": "Exit 2 is a historical no-key script result. It is not the verdict of the later funded browser-wallet live run. This verification does not claim that script exited 0."
+  },
+  "release": {
+    "contract_address": "0xa22bF39D1EEe217D58c16CEf109d7ff13D70efe7",
+    "deploy": {
+      "tx_id": "0xf50b2dfb99466df6e3bdebf9f119ba805ded381f1dcd2f4eb3ab89009eb52aee",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    "lock": {
+      "tx_id": "0x312850397acbfb344a360889a179d80f253531ad8e284fd91b9582b82d6f71af",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_RETURN",
+      "user_value_wei": "1000000000000000"
+    },
+    "payout_parent": {
+      "tx_id": "0x9d7eca9fc20750c7aace2f05f3c92c9fabc392f6c3426c1a7d06f259b5942626",
+      "method": "release_to_named_wallet",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_RETURN",
+      "result_name": "MAJORITY_AGREE",
+      "payout_submitted_means": "EthSend message emitted in parent execution. Not EOA delivery by itself."
+    },
+    "outgoing_eoa_message": {
+      "messageType": "0",
+      "is_eth_send": true,
+      "on": "finalized",
+      "recipient": "0x7E4E1f7DcC3DA063F9110477Ad348C90E8599253",
+      "value_wei": "1000000000000000",
+      "data": ""
+    },
+    "receipt_delivery": {
+      "tx_id": "0x4df8588228199999864fbc176e040467fa9741de57c44b727ebb798dbe3c2bbb",
+      "triggered_by": "0x9d7eca9fc20750c7aace2f05f3c92c9fabc392f6c3426c1a7d06f259b5942626",
+      "triggered_on": "finalized",
+      "from": "0xa22bF39D1EEe217D58c16CEf109d7ff13D70efe7",
+      "to": "0x7E4E1f7DcC3DA063F9110477Ad348C90E8599253",
+      "status": "FINALIZED",
+      "value_wei": "1000000000000000",
+      "value_credited": true,
+      "txExecutionResultName": "NOT_VOTED",
+      "result_name": "NO_MAJORITY",
+      "note": "Child EOA value transfer is not an Intelligent Contract vote. Delivery evidence is value_credited plus exact value/recipient, not parent payout_submitted."
+    },
+    "named_recipient_gain_wei": "1000000000000000",
+    "parent_primary_fee_spent_wei": "126304500000823",
+    "parent_primary_fee_source": "fee_accounting top_ups.primaryAmount - refunds.primary on the payout parent"
+  },
+  "refund": {
+    "contract_address": "0x2765F738bD6F7536Bf9bD9855435AA6178f77C2D",
+    "deploy": {
+      "tx_id": "0xcc500a542ef7f1c68fdbfdfd22c9159ec5dd758b308de20cc7ce6c296b9573ad",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    "lock": {
+      "tx_id": "0x6fe9a6a2aefa6275d0b676f2aa0f30032b5e960afc3cf8cfc27b31576a991a67",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_RETURN",
+      "user_value_wei": "1000000000000000"
+    },
+    "payout_parent": {
+      "tx_id": "0x007aac7c44a879fe2463f9d5a33f7ba8b7d71f3e3bd07eb2c4b63a886290f4a5",
+      "method": "refund_to_funder",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_RETURN",
+      "result_name": "MAJORITY_AGREE",
+      "payout_submitted_means": "EthSend message emitted in parent execution. Not EOA delivery by itself."
+    },
+    "outgoing_eoa_message": {
+      "messageType": "0",
+      "is_eth_send": true,
+      "on": "finalized",
+      "recipient": "0x31e14df3b4f47F2428F3B78E7279691A78f70a05",
+      "value_wei": "1000000000000000",
+      "data": ""
+    },
+    "receipt_delivery": {
+      "tx_id": "0x421969059863be771841972a7609019532012bc4e4bf32bc8525d63d95684c39",
+      "triggered_by": "0x007aac7c44a879fe2463f9d5a33f7ba8b7d71f3e3bd07eb2c4b63a886290f4a5",
+      "triggered_on": "finalized",
+      "from": "0x2765F738bD6F7536Bf9bD9855435AA6178f77C2D",
+      "to": "0x31e14df3b4f47F2428F3B78E7279691A78f70a05",
+      "status": "FINALIZED",
+      "value_wei": "1000000000000000",
+      "value_credited": true,
+      "txExecutionResultName": "NOT_VOTED",
+      "result_name": "NO_MAJORITY",
+      "note": "Gross refund transfer is 1000000000000000 wei. Funder also paid the payout parent protocol fee from the same EOA."
+    },
+    "parent_primary_fee_spent_wei": "126304500000823",
+    "parent_primary_fee_source": "fee_accounting top_ups.primaryAmount - refunds.primary on the payout parent",
+    "funder_gain_wei_net_of_payout_write_fee": "873695499999177",
+    "fee_plus_funder_gain_equals_lock_wei": true,
+    "arithmetic": "873695499999177 + 126304500000823 = 1000000000000000",
+    "private_balance_history": "not reconstructed; not invented"
+  },
+  "failed_historical_deploys_not_used_as_proof": [
+    {
+      "tx_id": "0xcff25696bcfbb8f0709dd11b1c07adb4e7a43f7f3c6f2144383004612c211008",
+      "to": "0x261ba97DA7C5f161AD9Dcb9286571d3CF0a5EA32",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_ERROR"
+    },
+    {
+      "tx_id": "0x492b62ee858688e4d1c92935447230dfbb522321fcb267f646b53b1088e539d4",
+      "to": "0x83a605DdA87e83f013BB87106747388644A45203",
+      "status": "FINALIZED",
+      "execution": "FINISHED_WITH_ERROR",
+      "note": "Old runner py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6 produced invalid_contract / runner malformed on Studio-dev."
+    }
+  ],
+  "concepts_kept_separate": [
+    "payout_submitted = parent emitted EthSend",
+    "receipt delivery = child EOA transfer value_credited with exact recipient and value",
+    "EOA balance evidence = named +1000000000000000 wei on release; funder net 873695499999177 wei on refund after primary_fee_spent 126304500000823 wei"
+  ],
+  "rpc_methods_used": [
+    "sim_getTransactionsForAddress",
+    "eth_getTransactionByHash",
+    "gen_getTransactionStatus",
+    "gen_getContractCode"
+  ]
+}

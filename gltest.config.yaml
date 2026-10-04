@@ -1,0 +1,12 @@
+paths:
+  contracts: contracts
+  artifacts: artifacts
+
+networks:
+  default: localnet
+  localnet:
+    chain_type: localnet
+  studio_devnet:
+    chain_type: studio_devnet
+    id: 61997
+    url: https://studio-dev.genlayer.com/api

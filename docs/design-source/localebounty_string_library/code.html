@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "on-primary-container": "#769682", "tertiary": "#0f1500", "inverse-on-surface": "#f4f0e7", "inverse-surface": "#31312a", "on-tertiary-fixed-variant": "#3d4d00", "secondary-fixed": "#ffdbcf", "error": "#ba1a1a", "tertiary-fixed": "#d0ef67", "on-secondary": "#ffffff", "surface-container-highest": "#e6e2d8", "on-primary-fixed": "#022113", "on-primary-fixed-variant": "#2f4d3c", "surface-dim": "#dddad0", "on-primary": "#ffffff", "error-container": "#ffdad6", "primary-fixed-dim": "#adceb8", "inverse-primary": "#adceb8", "on-secondary-fixed-variant": "#822700", "secondary-container": "#d04400", "on-background": "#1c1c16", "secondary": "#a63500", "surface-variant": "#e6e2d8", "surface-tint": "#476553", "on-error-container": "#93000a", "secondary-fixed-dim": "#ffb59c", "surface-bright": "#fdf9ef", "on-error": "#ffffff", "outline": "#727973", "surface-container-high": "#ece8de", "on-secondary-container": "#fffbff", "tertiary-container": "#212b00", "background": "#fdf9ef", "tertiary-fixed-dim": "#b4d34e", "surface-container-low": "#f7f3e9", "on-tertiary-container": "#7d9914", "surface-container-lowest": "#ffffff", "surface-container": "#f1eee4", "primary": "#00170b", "surface": "#fdf9ef", "on-secondary-fixed": "#390c00", "on-tertiary-fixed": "#171e00", "primary-container": "#0f2d1e", "on-surface": "#1c1c16", "outline-variant": "#c2c8c1", "on-surface-variant": "#424843", "primary-fixed": "#c9ebd3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "space-md": "1rem", "space-2xl": "4rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "display-xl-mobile": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "display-lg": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "title-md": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Space Grotesk" ], "display-xl": [ "Space Grotesk" ], "title-lg": [ "Space Grotesk" ], "label-sm": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "display-xl-mobile": [ "40px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-lg": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-lg-mobile": [ "34px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-xl": [ "72px", { "lineHeight": "76px", "letterSpacing": "-0.04em", "fontWeight": "700" } ], "title-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "46px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="LocaleBounty Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WOCveBzuyKTTZbq-KNMErr5mgm3440_mUE6pfrRWqn8nvIOGN9lneHB0vpkGD7Cwws-yHqAy201zWp7HHxeSaSpPvdSJeMhiQ0mEFg7aA1sdXWhaTOCK_f-e4Z2PqsQNMcYzZGPUCEYFNQXRvrmthwTC0KnBt3t3f4SpTfhFog-VNmV9V3O9mehW21hjXbEPHsxCHlA54bpu3FyDQV35oPnQW0elOkEOMybygGX3NXqDa0f6WGQyhiJA"/><span class="font-title-lg text-title-lg tracking-tight text-primary uppercase">LocaleBounty</span></div><div class="hidden sm:inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider rounded shadow-[2px_2px_0px_#00170b] rotate-[-2deg]"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>GenLayer Testnet</div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-high p-space-xs rounded" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[2px_2px_0px_#00170b]"><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="task-board" href="#">Task Board</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="create-task" href="#">Create Task</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="task-detail" href="#">Task Detail</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="submit-translation" href="#">Submit Translation</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="decision" href="#">Validation &amp; Decision</a><a aria-current="page" class="px-space-md py-space-xs rounded uppercase tracking-wider transition-all bg-primary-container text-on-primary font-bold shadow-[2px_2px_0px_#00170b]" data-path="string-library" href="#">String Library</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden md:flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded"><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface-variant font-bold leading-none">0x71C...4f9A</span><span class="font-body-sm text-body-sm font-bold text-secondary leading-tight">2,450 GEN</span></div><div class="h-6 w-px bg-outline-variant"></div><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-space-xs py-0.5 rounded text-on-surface-variant">Owner</span></div><a class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container font-headline-sm text-label-md uppercase px-space-md py-space-sm rounded shadow-[2px_2px_0px_#00170b] hover:bg-secondary hover:text-on-secondary active:translate-x-0.5 active:translate-y-0.5 transition-all" data-path="create-task" href="#"><span class="material-symbols-outlined text-sm font-bold">add</span><span>Create Bounty</span></a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCva_BeGtqVzZWs7wxK7WKMiLZdwBEnrESDSSBRE4Yon_ukjzhtpHoW_3CuTihtO8BKtmS7yy1-ObEp-dfJpTTCugpp2ZsPFpjQXM6WeEJPJOjinpvzi6zMF7eWb6iTqTP35n83nmSxleQqBzRxlwqkl9C9aNUQhsZPE1bcbShXnJGdyuYOviJs1grAZ92U9YYstGyl9wczgikgA76VWlDWjg7iiYgPrCbZstNPi-HUVvsemM-CRbf3"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<div class="w-full px-gutter py-space-xl flex flex-col gap-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider rounded rotate-[-1.5deg] shadow-[2px_2px_0px_#00170b]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Production Registry v1.4
+          </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-0.5 bg-surface-container-high text-on-surface-variant rounded">
+            GenLayer State Confirmed
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">
+            Block #4,892,104
+          </span>
+</div>
+<div class="flex flex-wrap items-baseline gap-x-space-md gap-y-1">
+<span class="font-headline-lg text-headline-lg tracking-tight text-primary uppercase">Official String Library</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Validated Production Corpus &amp; Canonical Keys</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-auto">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase rounded hover:bg-surface-dim active:translate-x-0.5 active:translate-y-0.5 transition-all shadow-[2px_2px_0px_#00170b]" id="btn-sync-repo">
+<span class="material-symbols-outlined text-base">sync_alt</span>
+<span>Sync with GitHub Repo</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase rounded hover:bg-secondary hover:text-on-secondary active:translate-x-0.5 active:translate-y-0.5 transition-all shadow-[2px_2px_0px_#00170b]" id="btn-export-bundle">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export i18n Resource Bundle</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<div class="md:col-span-5 relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:ring-2 focus:ring-primary shadow-[2px_2px_0px_#00170b]" id="string-search-input" placeholder="Search canonical key, source text, or hash..." type="text" value="order_ships_sla"/>
+</div>
+<div class="md:col-span-3 flex items-center bg-surface-container-lowest px-space-sm rounded shadow-[2px_2px_0px_#00170b]">
+<span class="material-symbols-outlined text-on-surface-variant ml-space-xs text-sm">translate</span>
+<select class="w-full bg-transparent px-space-xs py-space-sm font-label-md text-label-md text-on-surface focus:outline-none uppercase" id="filter-language">
+<option value="all">All Locales (42 Active)</option>
+<option selected="" value="es">Spanish (es-ES / es-LATAM)</option>
+<option value="fr">French (fr-FR)</option>
+<option value="de">German (de-DE)</option>
+<option value="ja">Japanese (ja-JP)</option>
+</select>
+</div>
+<div class="md:col-span-3 flex items-center bg-surface-container-lowest px-space-sm rounded shadow-[2px_2px_0px_#00170b]">
+<span class="material-symbols-outlined text-on-surface-variant ml-space-xs text-sm">widgets</span>
+<select class="w-full bg-transparent px-space-xs py-space-sm font-label-md text-label-md text-on-surface focus:outline-none uppercase" id="filter-module">
+<option value="all">All Modules</option>
+<option selected="" value="checkout">Checkout &amp; Fulfillment</option>
+<option value="auth">Auth &amp; Session</option>
+<option value="settings">Settings &amp; Preferences</option>
+<option value="billing">Billing &amp; Subscriptions</option>
+</select>
+</div>
+<div class="md:col-span-1 flex items-stretch">
+<button class="w-full inline-flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-highest rounded p-space-xs font-label-sm text-label-sm uppercase" id="btn-reset-filters" title="Reset Filters">
+<span class="material-symbols-outlined text-base">restart_alt</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span class="font-bold text-on-surface">Filters Active:</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-highest px-space-xs py-0.5 rounded">
+            Key: order_ships_sla
+            <button class="hover:text-secondary"><span class="material-symbols-outlined text-xs">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-highest px-space-xs py-0.5 rounded">
+            Lang: Spanish
+            <button class="hover:text-secondary"><span class="material-symbols-outlined text-xs">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-highest px-space-xs py-0.5 rounded">
+            Module: Checkout
+            <button class="hover:text-secondary"><span class="material-symbols-outlined text-xs">close</span></button>
+</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">
+          Displaying <span class="font-bold text-on-surface">4 of 1,280</span> Approved Keys
+        </div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Canonical String Registry</span>
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-bold">4 Matches</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span>Sort:</span>
+<span class="font-bold text-on-surface uppercase">Release Order ▼</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm" id="string-list-container">
+<div class="string-card cursor-pointer p-space-md rounded bg-surface-container-lowest shadow-[3px_3px_0px_#00170b] transition-all transform hover:-translate-y-0.5" data-string-id="str-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm font-bold bg-primary text-on-primary px-space-xs py-0.5 rounded">01</span>
+<span class="font-headline-sm text-title-md tracking-tight text-primary font-bold">checkout.shipping.sla_notice</span>
+</div>
+<span class="px-space-xs py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded shadow-[1px_1px_0px_#00170b]">
+                v1.4.0
+              </span>
+</div>
+<div class="mt-space-sm bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">EN</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug font-medium">"Your order ships within 3 business days."</p>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase w-7 flex-shrink-0">ES</span>
+<p class="font-body-sm text-body-sm text-secondary font-bold leading-snug">"Tu pedido se envía en un plazo de 3 días hábiles."</p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-secondary-container">verified</span>
+<span class="font-bold text-on-surface">3/3 Consensus (100%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">payments</span>
+<span>Bounty Paid: <strong class="text-on-surface">150 GEN</strong> to <code class="font-mono text-on-surface-variant">0x94b3...28a1</code></span>
+</div>
+</div>
+</div>
+<div class="string-card cursor-pointer p-space-md rounded bg-surface-container-low hover:bg-surface-container-lowest shadow-[2px_2px_0px_#727973] transition-all" data-string-id="str-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm font-bold bg-surface-container-highest text-on-surface px-space-xs py-0.5 rounded">02</span>
+<span class="font-headline-sm text-title-md tracking-tight text-primary font-bold">auth.2fa.expiry_warning</span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold rounded">
+                v1.3.2
+              </span>
+</div>
+<div class="mt-space-sm bg-surface-container-high/50 p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">EN</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">"Two-factor authentication code expires in 10 minutes."</p>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">JA</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">"2段階認証コードの有効期限は10分です。"</p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">verified</span>
+<span>Consensus: 5/5 Validated</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span>EN → JA</span>
+<span>•</span>
+<span>210 GEN</span>
+</div>
+</div>
+</div>
+<div class="string-card cursor-pointer p-space-md rounded bg-surface-container-low hover:bg-surface-container-lowest shadow-[2px_2px_0px_#727973] transition-all" data-string-id="str-3">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm font-bold bg-surface-container-highest text-on-surface px-space-xs py-0.5 rounded">03</span>
+<span class="font-headline-sm text-title-md tracking-tight text-primary font-bold">billing.subscription.annual_disclaimer</span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold rounded">
+                v1.3.0
+              </span>
+</div>
+<div class="mt-space-sm bg-surface-container-high/50 p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">EN</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">"Annual plan billed once per year. Cancel anytime."</p>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">DE</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">"Der Jahresplan wird einmal jährlich abgerechnet. Jederzeit kündbar."</p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">verified</span>
+<span>Consensus: 3/3 Validated</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span>EN → DE</span>
+<span>•</span>
+<span>120 GEN</span>
+</div>
+</div>
+</div>
+<div class="string-card cursor-pointer p-space-md rounded bg-surface-container-low hover:bg-surface-container-lowest shadow-[2px_2px_0px_#727973] transition-all" data-string-id="str-4">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm font-bold bg-surface-container-highest text-on-surface px-space-xs py-0.5 rounded">04</span>
+<span class="font-headline-sm text-title-md tracking-tight text-primary font-bold">wallet.connect.hardware_prompt</span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold rounded">
+                v1.2.9
+              </span>
+</div>
+<div class="mt-space-sm bg-surface-container-high/50 p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">EN</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">"Connect your hardware wallet to sign transaction."</p>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase w-7 flex-shrink-0">FR</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">"Connectez votre portefeuille matériel pour signer la transaction."</p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">verified</span>
+<span>Consensus: 4/4 Validated</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span>EN → FR</span>
+<span>•</span>
+<span>180 GEN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Registry Digest</span>
+<span class="font-body-sm text-body-sm text-on-surface">SHA-256: 7f8a9...b401e</span>
+</div>
+<button class="px-space-sm py-space-xs bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase rounded hover:bg-surface-dim">
+            Verify Merkle Tree
+          </button>
+</div>
+</div>
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-[4px_4px_0px_#00170b] flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md bg-surface-container-low p-space-md rounded">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold rounded shadow-[1px_1px_0px_#00170b]">
+                  v1.4.0 (Latest Release)
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">
+                  Approved Oct 24, 2024 • 14:32 UTC
+                </span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">
+                checkout.shipping.sla_notice
+              </div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-primary-container text-on-primary rounded shadow-[2px_2px_0px_#00170b]">
+<span class="material-symbols-outlined text-tertiary-fixed text-sm">lock_clock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">State Hash: 0x9f1a...48e2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Consensus Node: Validator Quorum #7</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md bg-surface-container-low rounded flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Source String (EN-US)</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">Default Locale</span>
+</div>
+<div class="font-title-md text-title-md text-primary mt-space-xs font-semibold">
+                  "Your order ships within 3 business days."
+                </div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Tokens: 7 words / 43 chars</span>
+<button class="hover:text-primary inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">volume_up</span>
+<span>TTS Preview</span>
+</button>
+</div>
+</div>
+<div class="p-space-md bg-secondary-fixed/30 rounded flex flex-col justify-between gap-space-sm shadow-[2px_2px_0px_#d04400]">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Approved Target (ES-LATAM)</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-bold">Passed 100%</span>
+</div>
+<div class="font-title-md text-title-md text-secondary mt-space-xs font-bold">
+                  "Tu pedido se envía en un plazo de 3 días hábiles."
+                </div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Equivalence Score: <strong class="text-secondary">0.998 GenBLEU</strong></span>
+<span class="text-secondary font-bold">Semantic Exact</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-base">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Context:</strong> Checkout order fulfillment status card beneath payment authorization row.
+              </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">
+<span>Max Char Allowance: 55</span>
+<span>•</span>
+<span class="text-primary font-bold">Used: 49 (89%)</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-title-lg tracking-tight text-primary uppercase font-bold">Live Contextual App Preview</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-tertiary-fixed text-on-tertiary-fixed rounded font-bold uppercase">Dynamic Injection</span>
+</div>
+<div class="flex items-center bg-surface-container-high p-0.5 rounded shadow-inner">
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase rounded bg-primary text-on-primary font-bold shadow-sm transition-all flex items-center gap-1" id="preview-mode-mobile">
+<span class="material-symbols-outlined text-xs">smartphone</span>
+<span>Mobile View</span>
+</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase rounded text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="preview-mode-desktop">
+<span class="material-symbols-outlined text-xs">desktop_windows</span>
+<span>Desktop View</span>
+</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase rounded text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="preview-mode-json">
+<span class="material-symbols-outlined text-xs">data_object</span>
+<span>Raw JSON</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest p-space-md rounded flex items-center justify-center min-h-[380px] overflow-hidden transition-all" id="preview-viewport-container">
+<div class="w-full max-w-[360px] bg-primary-container text-inverse-on-surface rounded-xl p-space-md shadow-[4px_4px_0px_#00170b] flex flex-col gap-space-md transition-all" id="mock-device">
+<div class="flex items-center justify-between pb-space-xs border-b border-primary-fixed-dim/20 text-inverse-on-surface/80">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">storefront</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Tienda Oficial</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-tertiary-container text-tertiary-fixed rounded font-mono">es-ES</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim font-bold">Confirmación de Compra</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface tracking-tight">Orden #LB-9921</span>
+<span class="font-title-lg text-title-lg font-bold text-tertiary-fixed">$149.00 USD</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/10 p-space-sm rounded flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary-fixed-dim">check_circle</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface">Pago confirmado vía Stripe Web3</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase">Recibo #78A</span>
+</div>
+<div class="p-space-sm rounded bg-tertiary-fixed text-on-tertiary-fixed shadow-[3px_3px_0px_#00170b] flex flex-col gap-1 relative overflow-hidden group">
+<div class="absolute -right-2 -bottom-2 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-6xl">local_shipping</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">package_2</span>
+<span>Envío Estándar Garantizado</span>
+</span>
+<span class="font-label-sm text-label-sm px-1 bg-primary text-on-primary rounded uppercase">Active Key</span>
+</div>
+<p class="font-title-md text-title-md font-bold text-primary leading-tight mt-0.5" id="preview-highlight-text">
+                    "Tu pedido se envía en un plazo de 3 días hábiles."
+                  </p>
+<div class="flex items-center justify-between mt-1 pt-1 border-t border-primary/20 text-primary font-label-sm text-label-sm">
+<span class="font-mono">key: checkout.shipping.sla_notice</span>
+<span class="font-bold">✓ Approved String</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-inverse-on-surface/70 font-body-sm text-body-sm">
+<span>Transportista: DHL Global Express</span>
+<a class="text-tertiary-fixed underline font-label-sm text-label-sm uppercase" href="#">Seguimiento</a>
+</div>
+<button class="w-full py-space-sm bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase rounded font-bold shadow-[2px_2px_0px_#00170b] hover:bg-secondary hover:text-on-secondary transition-all">
+                  Descargar Factura Fiscal
+                </button>
+</div>
+<div class="hidden w-full max-w-xl bg-primary text-inverse-on-surface p-space-md rounded font-mono text-body-sm text-body-sm leading-relaxed overflow-x-auto shadow-[4px_4px_0px_#00170b]" id="json-view-container">
+<pre class="text-primary-fixed-dim"><code>{
+  <span class="text-tertiary-fixed">"$schema"</span>: "https://localebounty.network/schema/i18n.v1.json",
+  <span class="text-tertiary-fixed">"locale"</span>: "es-LATAM",
+  <span class="text-tertiary-fixed">"version"</span>: "1.4.0",
+  <span class="text-tertiary-fixed">"consensus_hash"</span>: "0x9f1a28cb001948e2...",
+  <span class="text-tertiary-fixed">"strings"</span>: {
+    <span class="text-secondary-fixed">"checkout.shipping.sla_notice"</span>: <span class="text-tertiary-fixed">"Tu pedido se envía en un plazo de 3 días hábiles."</span>
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Code Integration Snippet</span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm uppercase px-space-sm py-1 bg-surface-container-high hover:bg-surface-container-highest rounded text-on-surface transition-all" id="btn-copy-code">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+<span id="copy-btn-text">Copy Key / Pair</span>
+</button>
+</div>
+<div class="bg-primary text-inverse-on-surface p-space-md rounded flex items-center justify-between font-mono text-body-sm text-body-sm overflow-x-auto shadow-inner">
+<code class="text-primary-fixed" id="snippet-code-text">
+                { "checkout.shipping.sla_notice": "Tu pedido se envía en un plazo de 3 días hábiles." }
+              </code>
+<span class="font-label-sm text-label-sm uppercase text-inverse-on-surface/50 ml-space-md flex-shrink-0">i18next / FormatJS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-low rounded flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold shadow-[2px_2px_0px_#00170b] flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">account_tree</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-title-md font-bold text-primary">Need an automated CI/CD Localization Hook?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">LocaleBounty pushes approved strings directly into your Git repos when consensus reaches 100%.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<a class="px-space-md py-space-sm bg-primary text-on-primary font-label-md text-label-md uppercase rounded hover:bg-primary-container active:translate-x-0.5 active:translate-y-0.5 shadow-[2px_2px_0px_#00170b] transition-all" href="#">
+          Install GitHub Action →
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initStringLibraryInteractive() {
+    const stringData = {
+      'str-1': {
+        key: 'checkout.shipping.sla_notice',
+        version: 'v1.4.0 (Latest Release)',
+        releaseBadge: 'v1.4.0',
+        date: 'Oct 24, 2024 • 14:32 UTC',
+        hash: '0x9f1a...48e2',
+        quorum: 'Validator Quorum #7',
+        src: 'Your order ships within 3 business days.',
+        target: 'Tu pedido se envía en un plazo de 3 días hábiles.',
+        langPair: 'ES-LATAM',
+        context: 'Checkout order fulfillment status card beneath payment authorization row.',
+        appTitle: 'Tienda Oficial',
+        orderNo: 'Orden #LB-9921',
+        total: '$149.00 USD',
+        shippingBadge: 'Envío Estándar Garantizado',
+        previewText: '"Tu pedido se envía en un plazo de 3 días hábiles."',
+        codeSnippet: '{ "checkout.shipping.sla_notice": "Tu pedido se envía en un plazo de 3 días hábiles." }',
+        jsonPreview: `{\n  "$schema": "https://localebounty.network/schema/i18n.v1.json",\n  "locale": "es-LATAM",\n  "version": "1.4.0",\n  "consensus_hash": "0x9f1a...48e2",\n  "strings": {\n    "checkout.shipping.sla_notice": "Tu pedido se envía en un plazo de 3 días hábiles."\n  }\n}`
+      },
+      'str-2': {
+        key: 'auth.2fa.expiry_warning',
+        version: 'v1.3.2 (Stable)',
+        releaseBadge: 'v1.3.2',
+        date: 'Oct 22, 2024 • 09:14 UTC',
+        hash: '0x4ca8...e112',
+        quorum: 'Validator Quorum #3',
+        src: 'Two-factor authentication code expires in 10 minutes.',
+        target: '2段階認証コードの有効期限は10分です。',
+        langPair: 'JA-JP',
+        context: 'Two-Factor Challenge security banner directly above 6-digit input fields.',
+        appTitle: 'セキュリティ検証',
+        orderNo: '認証セッション #AUTH-404',
+        total: '状態: 待機中',
+        shippingBadge: 'ワンタイムパスコード',
+        previewText: '"2段階認証コードの有効期限は10分です。"',
+        codeSnippet: '{ "auth.2fa.expiry_warning": "2段階認証コードの有効期限は10分です。" }',
+        jsonPreview: `{\n  "$schema": "https://localebounty.network/schema/i18n.v1.json",\n  "locale": "ja-JP",\n  "version": "1.3.2",\n  "consensus_hash": "0x4ca8...e112",\n  "strings": {\n    "auth.2fa.expiry_warning": "2段階認証コードの有効期限は10分です。"\n  }\n}`
+      },
+      'str-3': {
+        key: 'billing.subscription.annual_disclaimer',
+        version: 'v1.3.0 (Stable)',
+        releaseBadge: 'v1.3.0',
+        date: 'Oct 19, 2024 • 11:20 UTC',
+        hash: '0x1bb2...ff84',
+        quorum: 'Validator Quorum #5',
+        src: 'Annual plan billed once per year. Cancel anytime.',
+        target: 'Der Jahresplan wird einmal jährlich abgerechnet. Jederzeit kündbar.',
+        langPair: 'DE-DE',
+        context: 'Subscription upgrade screen above submit payment button.',
+        appTitle: 'Abonnement Pläne',
+        orderNo: 'Plan #PRO-ANNUAL',
+        total: '€240,00 / Jahr',
+        shippingBadge: 'Tarifkonditionen',
+        previewText: '"Der Jahresplan wird einmal jährlich abgerechnet. Jederzeit kündbar."',
+        codeSnippet: '{ "billing.subscription.annual_disclaimer": "Der Jahresplan wird einmal jährlich abgerechnet. Jederzeit kündbar." }',
+        jsonPreview: `{\n  "$schema": "https://localebounty.network/schema/i18n.v1.json",\n  "locale": "de-DE",\n  "version": "1.3.0",\n  "consensus_hash": "0x1bb2...ff84",\n  "strings": {\n    "billing.subscription.annual_disclaimer": "Der Jahresplan wird einmal jährlich abgerechnet. Jederzeit kündbar."\n  }\n}`
+      },
+      'str-4': {
+        key: 'wallet.connect.hardware_prompt',
+        version: 'v1.2.9 (Stable)',
+        releaseBadge: 'v1.2.9',
+        date: 'Oct 18, 2024 • 16:05 UTC',
+        hash: '0x88f1...39cc',
+        quorum: 'Validator Quorum #2',
+        src: 'Connect your hardware wallet to sign transaction.',
+        target: 'Connectez votre portefeuille matériel pour signer la transaction.',
+        langPair: 'FR-FR',
+        context: 'Web3 Wallet connection modal step 2 hardware dongle detected.',
+        appTitle: 'Portefeuille Web3',
+        orderNo: 'Signature #TX-8819',
+        total: 'Frais: 0.002 ETH',
+        shippingBadge: 'Validation Périphérique',
+        previewText: '"Connectez votre portefeuille matériel pour signer la transaction."',
+        codeSnippet: '{ "wallet.connect.hardware_prompt": "Connectez votre portefeuille matériel pour signer la transaction." }',
+        jsonPreview: `{\n  "$schema": "https://localebounty.network/schema/i18n.v1.json",\n  "locale": "fr-FR",\n  "version": "1.2.9",\n  "consensus_hash": "0x88f1...39cc",\n  "strings": {\n    "wallet.connect.hardware_prompt": "Connectez votre portefeuille matériel pour signer la transaction."\n  }\n}`
+      }
+    };
+
+    const cards = document.querySelectorAll('.string-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-string-id');
+        selectStringCard(id);
+      });
+    });
+
+    function selectStringCard(id) {
+      cards.forEach(c => {
+        c.classList.remove('bg-surface-container-lowest', 'shadow-[3px_3px_0px_#00170b]', '-translate-y-0.5');
+        c.classList.add('bg-surface-container-low', 'shadow-[2px_2px_0px_#727973]');
+      });
+      const selected = document.querySelector(`[data-string-id="${id}"]`);
+      if (selected) {
+        selected.classList.remove('bg-surface-container-low', 'shadow-[2px_2px_0px_#727973]');
+        selected.classList.add('bg-surface-container-lowest', 'shadow-[3px_3px_0px_#00170b]', '-translate-y-0.5');
+      }
+
+      const d = stringData[id];
+      if (!d) return;
+
+      const codeBox = document.getElementById('snippet-code-text');
+      if (codeBox) codeBox.textContent = d.codeSnippet;
+
+      const previewHighlight = document.getElementById('preview-highlight-text');
+      if (previewHighlight) previewHighlight.textContent = d.previewText;
+
+      const jsonPre = document.querySelector('#json-view-container code');
+      if (jsonPre) jsonPre.textContent = d.jsonPreview;
+    }
+
+    const btnMobile = document.getElementById('preview-mode-mobile');
+    const btnDesktop = document.getElementById('preview-mode-desktop');
+    const btnJson = document.getElementById('preview-mode-json');
+    const mockDevice = document.getElementById('mock-device');
+    const jsonContainer = document.getElementById('json-view-container');
+
+    function setActiveToggle(activeBtn) {
+      [btnMobile, btnDesktop, btnJson].forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'font-bold', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      activeBtn.classList.remove('text-on-surface-variant');
+      activeBtn.classList.add('bg-primary', 'text-on-primary', 'font-bold', 'shadow-sm');
+    }
+
+    if (btnMobile) {
+      btnMobile.addEventListener('click', () => {
+        setActiveToggle(btnMobile);
+        jsonContainer.classList.add('hidden');
+        mockDevice.classList.remove('hidden', 'max-w-[620px]');
+        mockDevice.classList.add('max-w-[360px]');
+      });
+    }
+
+    if (btnDesktop) {
+      btnDesktop.addEventListener('click', () => {
+        setActiveToggle(btnDesktop);
+        jsonContainer.classList.add('hidden');
+        mockDevice.classList.remove('hidden', 'max-w-[360px]');
+        mockDevice.classList.add('max-w-[620px]');
+      });
+    }
+
+    if (btnJson) {
+      btnJson.addEventListener('click', () => {
+        setActiveToggle(btnJson);
+        mockDevice.classList.add('hidden');
+        jsonContainer.classList.remove('hidden');
+      });
+    }
+
+    const btnCopy = document.getElementById('btn-copy-code');
+    const copyText = document.getElementById('copy-btn-text');
+    if (btnCopy) {
+      btnCopy.addEventListener('click', () => {
+        const text = document.getElementById('snippet-code-text').innerText;
+        navigator.clipboard?.writeText(text).then(() => {
+          copyText.textContent = 'Copied to Clipboard!';
+          setTimeout(() => {
+            copyText.textContent = 'Copy Key / Pair';
+          }, 2000);
+        }).catch(() => {
+          copyText.textContent = 'Copied!';
+          setTimeout(() => {
+            copyText.textContent = 'Copy Key / Pair';
+          }, 2000);
+        });
+      });
+    }
+
+    const btnExport = document.getElementById('btn-export-bundle');
+    if (btnExport) {
+      btnExport.addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify(stringData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'localebounty_v1.4_i18n_bundle.json';
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    const btnSync = document.getElementById('btn-sync-repo');
+    if (btnSync) {
+      btnSync.addEventListener('click', () => {
+        const original = btnSync.innerHTML;
+        btnSync.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">refresh</span><span>Syncing with GitHub...</span>';
+        setTimeout(() => {
+          btnSync.innerHTML = '<span class="material-symbols-outlined text-base text-tertiary-fixed">check</span><span>Up to date (Commit #4a81)</span>';
+          setTimeout(() => {
+            btnSync.innerHTML = original;
+          }, 2500);
+        }, 1200);
+      });
+    }
+
+    const searchInput = document.getElementById('string-search-input');
+    const resetBtn = document.getElementById('btn-reset-filters');
+    if (resetBtn && searchInput) {
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        cards.forEach(c => c.style.display = 'block');
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        cards.forEach(c => {
+          const text = c.innerText.toLowerCase();
+          c.style.display = text.includes(query) ? 'block' : 'none';
+        });
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-primary-container text-inverse-on-surface pt-space-2xl pb-space-lg overflow-hidden"><div class="w-full px-gutter"><div class="flex flex-wrap items-center justify-between gap-space-md pb-space-xl border-b border-primary-fixed-dim/20"><div class="flex items-center gap-space-sm"><span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary-fixed animate-ping"></span><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary-fixed">Validator Status Ticker:</span><span class="font-title-md text-title-md text-inverse-on-surface">GenLayer Validator Network Active (99.98% agreement)</span></div><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest/10 text-tertiary-fixed font-label-sm text-label-sm rounded uppercase tracking-wider"><span class="material-symbols-outlined text-sm">verified</span>Simulated Testnet Protocol</div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-space-xl py-space-2xl"><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Protocol</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="task-board" href="#">Task Board</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="create-task" href="#">Post Bounty</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="string-library" href="#">String Repositories</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Consensus Staking</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Consensus Engine</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="decision" href="#">GenLayer Deliberation</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">LLM Equivalence Oracles</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Validator Slash Engine</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Challenged Rounds</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Documentation</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Smart Contract Spec</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">i18n Schema Standard</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">GenLayer SDK</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">API References</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Governance &amp; Legal</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Protocol Disclaimers</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Decentralized License</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Privacy Framework</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Testnet Bug Bounty</a></div></div><div class="py-space-xl select-none pointer-events-none"><div class="font-display-xl text-[64px] sm:text-[100px] md:text-[140px] lg:text-[180px] leading-none font-bold uppercase tracking-tighter text-surface-container-lowest/[0.07] whitespace-nowrap overflow-hidden">LOCALIZATION</div></div><div class="pt-space-lg border-t border-primary-fixed-dim/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md text-inverse-on-surface/60 font-body-sm text-body-sm"><p>© 2025 LocaleBounty Foundation. Built on GenLayer Intelligent Consensus Protocol.</p><p class="font-label-sm text-label-sm uppercase tracking-wider">Contract Core: <span class="text-tertiary-fixed font-bold">0x94B7...81E3</span> • Simulated Environment</p></div></div></footer></body></html>

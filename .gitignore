@@ -1,0 +1,39 @@
+# Dependencies and production build (reproducible; leave on disk locally)
+node_modules/
+dist/
+
+# Local environment — keep .env.example; never commit .env.local
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.local
+
+# Vite / TypeScript incremental caches
+.vite/
+*.tsbuildinfo
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
+
+# Python bytecode and pytest cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+.uv-cache/
+.uv-python/
+.gh-temp/
+
+# GenLayer CLI / gltest generated output
+artifacts/
+
+# Coverage and logs
+coverage/
+htmlcov/
+.coverage
+*.log

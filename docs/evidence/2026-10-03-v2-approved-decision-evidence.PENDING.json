@@ -1,0 +1,33 @@
+﻿{
+  "kind": "localebounty.product-ui-v2.decision-evidence.v1",
+  "archive_status": "PENDING_SIGNING_BROWSER_COPY_JSON",
+  "reason": "This agent cannot access the signing browser localStorage. Use /v2/tasks/7e1974679cc5f3423573e8cf52b2446ed2a3de6bf4ad5415054f8532bf2c6352/decision and click Copy V2 evidence JSON, then paste the exact JSON for archival without rewriting values.",
+  "network": {
+    "name": "GenLayer Studio Devnet",
+    "chainIdExpected": 61997,
+    "rpc": "https://studio-dev.genlayer.com/api"
+  },
+  "contract": "0x3B06e08182Db177a61B1707f7b5A84834A45F431",
+  "sourceSha256Pin": "3cbb7ff08dca3909b9765ce0467e7ddc8c6ec0d7c104e142c892cfafd169a43d",
+  "taskId": "7e1974679cc5f3423573e8cf52b2446ed2a3de6bf4ad5415054f8532bf2c6352",
+  "translation": "Tu pedido ya está en camino.",
+  "rewardWei": "500000000000000000",
+  "evaluateParentTxId_reported_by_user": "0xb8347951b9428e16edc3178d3915f89206c24ca28178b9f520f8eaa399365923",
+  "creditedChildTxId_reported_by_user": "0x045207e2ac7c0fc29de8bfd452ae3bcd51b7fe80ac13370a8fa24a3cea1e8682",
+  "actualEvaluateReceiptFeeWei_reported_by_user": "126528500000823",
+  "actualEvaluateReceiptFeeSource_reported_by_user": "primary_fee_spent",
+  "verdict_reported_by_user": "YES",
+  "missing_until_copy_json": [
+    "createTx",
+    "acceptTx",
+    "submitTx",
+    "finalizedParentReceipt",
+    "exactOutgoingEthSend",
+    "matchingChildCreditObject",
+    "beforeSnapshot",
+    "afterSnapshot",
+    "libraryEntry"
+  ],
+  "note": "Reported values are not a substitute for the exact signing-browser Copy JSON archive."
+}
+

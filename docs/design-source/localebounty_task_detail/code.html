@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "on-primary-container": "#769682", "tertiary": "#0f1500", "inverse-on-surface": "#f4f0e7", "inverse-surface": "#31312a", "on-tertiary-fixed-variant": "#3d4d00", "secondary-fixed": "#ffdbcf", "error": "#ba1a1a", "tertiary-fixed": "#d0ef67", "on-secondary": "#ffffff", "surface-container-highest": "#e6e2d8", "on-primary-fixed": "#022113", "on-primary-fixed-variant": "#2f4d3c", "surface-dim": "#dddad0", "on-primary": "#ffffff", "error-container": "#ffdad6", "primary-fixed-dim": "#adceb8", "inverse-primary": "#adceb8", "on-secondary-fixed-variant": "#822700", "secondary-container": "#d04400", "on-background": "#1c1c16", "secondary": "#a63500", "surface-variant": "#e6e2d8", "surface-tint": "#476553", "on-error-container": "#93000a", "secondary-fixed-dim": "#ffb59c", "surface-bright": "#fdf9ef", "on-error": "#ffffff", "outline": "#727973", "surface-container-high": "#ece8de", "on-secondary-container": "#fffbff", "tertiary-container": "#212b00", "background": "#fdf9ef", "tertiary-fixed-dim": "#b4d34e", "surface-container-low": "#f7f3e9", "on-tertiary-container": "#7d9914", "surface-container-lowest": "#ffffff", "surface-container": "#f1eee4", "primary": "#00170b", "surface": "#fdf9ef", "on-secondary-fixed": "#390c00", "on-tertiary-fixed": "#171e00", "primary-container": "#0f2d1e", "on-surface": "#1c1c16", "outline-variant": "#c2c8c1", "on-surface-variant": "#424843", "primary-fixed": "#c9ebd3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "space-md": "1rem", "space-2xl": "4rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "display-xl-mobile": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "display-lg": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "title-md": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Space Grotesk" ], "display-xl": [ "Space Grotesk" ], "title-lg": [ "Space Grotesk" ], "label-sm": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "display-xl-mobile": [ "40px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-lg": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-lg-mobile": [ "34px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-xl": [ "72px", { "lineHeight": "76px", "letterSpacing": "-0.04em", "fontWeight": "700" } ], "title-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "46px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="LocaleBounty Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WOCveBzuyKTTZbq-KNMErr5mgm3440_mUE6pfrRWqn8nvIOGN9lneHB0vpkGD7Cwws-yHqAy201zWp7HHxeSaSpPvdSJeMhiQ0mEFg7aA1sdXWhaTOCK_f-e4Z2PqsQNMcYzZGPUCEYFNQXRvrmthwTC0KnBt3t3f4SpTfhFog-VNmV9V3O9mehW21hjXbEPHsxCHlA54bpu3FyDQV35oPnQW0elOkEOMybygGX3NXqDa0f6WGQyhiJA"/><span class="font-title-lg text-title-lg tracking-tight text-primary uppercase">LocaleBounty</span></div><div class="hidden sm:inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider rounded shadow-[2px_2px_0px_#00170b] rotate-[-2deg]"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>GenLayer Testnet</div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-high p-space-xs rounded" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[2px_2px_0px_#00170b]"><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="task-board" href="#">Task Board</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="create-task" href="#">Create Task</a><a aria-current="page" class="px-space-md py-space-xs rounded uppercase tracking-wider transition-all bg-primary-container text-on-primary font-bold shadow-[2px_2px_0px_#00170b]" data-path="task-detail" href="#">Task Detail</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="submit-translation" href="#">Submit Translation</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="decision" href="#">Validation &amp; Decision</a><a class="px-space-md py-space-xs rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="string-library" href="#">String Library</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden md:flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded"><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface-variant font-bold leading-none">0x71C...4f9A</span><span class="font-body-sm text-body-sm font-bold text-secondary leading-tight">2,450 GEN</span></div><div class="h-6 w-px bg-outline-variant"></div><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-space-xs py-0.5 rounded text-on-surface-variant">Owner</span></div><a class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container font-headline-sm text-label-md uppercase px-space-md py-space-sm rounded shadow-[2px_2px_0px_#00170b] hover:bg-secondary hover:text-on-secondary active:translate-x-0.5 active:translate-y-0.5 transition-all" data-path="create-task" href="#"><span class="material-symbols-outlined text-sm font-bold">add</span><span>Create Bounty</span></a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCva_BeGtqVzZWs7wxK7WKMiLZdwBEnrESDSSBRE4Yon_ukjzhtpHoW_3CuTihtO8BKtmS7yy1-ObEp-dfJpTTCugpp2ZsPFpjQXM6WeEJPJOjinpvzi6zMF7eWb6iTqTP35n83nmSxleQqBzRxlwqkl9C9aNUQhsZPE1bcbShXnJGdyuYOviJs1grAZ92U9YYstGyl9wczgikgA76VWlDWjg7iiYgPrCbZstNPi-HUVvsemM-CRbf3"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Context Ribbon / Breadcrumb Navigation -->
+<section class="w-full px-gutter pt-space-lg pb-space-sm bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="task-board" href="#">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+          Bounties Registry
+        </a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-bold">TASK-0842-ES</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+          Escrow Contract: 0x88F...421D
+        </span>
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-xs">shield</span>
+          GenLayer Intelligent Slashing Active
+        </div>
+</div>
+</div>
+</section>
+<!-- Editorial Header Bar Section -->
+<section class="w-full px-gutter py-space-xl bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm mb-space-xs">
+<!-- Task ID Pill + Interactive Copy -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-lowest shadow-sm">
+<span class="font-label-md text-label-md font-bold tracking-wider text-primary">#TASK-0842-ES</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center" onclick="navigator.clipboard.writeText('#TASK-0842-ES'); this.querySelector('span').innerText='check'; setTimeout(()=&gt;this.querySelector('span').innerText='content_copy', 1800);" title="Copy Task ID">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<!-- Status Badge: Lime Green Pill Neo-Brutalist -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md uppercase tracking-wider font-bold shadow-[2px_2px_0px_#00170b] rotate-[-1deg]">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+              ACTIVE • IN PROGRESS
+            </div>
+<!-- Pair Badge -->
+<div class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<span class="font-bold text-secondary">EN-US</span>
+<span class="material-symbols-outlined text-xs">trending_flat</span>
+<span class="font-bold text-primary">ES-ES</span>
+</div>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Checkout Delivery SLA Microcopy
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Critical production UI localized string for pan-European express checkout &amp; logistics status banner.
+          </p>
+</div>
+<!-- Bounty Lockup Ticket in Header -->
+<div class="flex-shrink-0 flex items-center">
+<div class="bg-primary text-on-primary p-space-md rounded shadow-md relative overflow-hidden flex flex-col min-w-[260px]">
+<div class="flex items-center justify-between text-on-primary/70 font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>Escrow Bounty Lock</span>
+<span class="material-symbols-outlined text-base text-tertiary-fixed">token</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-tertiary-fixed leading-none">150</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">GEN</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-primary-fixed-dim font-label-sm text-label-sm uppercase tracking-wider">
+<span>≈ $210.00 USD</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/15 text-tertiary-fixed font-bold">1.40 GEN/word</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main 2-Column Split Layout (60 / 40) -->
+<section class="w-full px-gutter py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: The Immutable Specification (7 of 12 cols = ~58-60%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Immutable Spec Sheet Card -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm p-space-xl relative overflow-hidden flex flex-col gap-space-lg">
+<!-- Editorial Stepped Mosaic Accent (Visual Cue from design spec) -->
+<div class="absolute top-0 right-0 w-24 h-24 pointer-events-none opacity-80 flex flex-col items-end">
+<div class="w-12 h-6 bg-primary-container"></div>
+<div class="w-18 h-6 bg-tertiary-fixed"></div>
+<div class="w-24 h-6 bg-secondary-container"></div>
+</div>
+<!-- Card Header & Consensus Block Watermark -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pr-16">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary font-bold">lock</span>
+<h2 class="font-title-lg text-title-lg text-primary uppercase tracking-tight">
+                Immutable Task Specification
+              </h2>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Locked at Block #4,891,204
+            </div>
+</div>
+<!-- Source Text Box -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-lg rounded">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">
+                Source String [en-US]
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                6 words • 38 characters
+              </span>
+</div>
+<blockquote class="my-space-sm text-primary font-headline-md text-headline-md tracking-tight italic select-all">
+              “Your order ships within 3 business days.”
+            </blockquote>
+<div class="flex items-center gap-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">pin_drop</span>
+<span>Context &amp; UI Placement:</span>
+<span class="font-bold text-on-surface">E-commerce Checkout Confirmation / Delivery Tracker banner</span>
+</div>
+</div>
+<!-- Visual Artifact Reference / Mockup Preview of string in situ -->
+<div class="bg-surface-container p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span>
+                In-Situ Layout Preview
+              </span>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Max-width 320px constraint</span>
+</div>
+<div class="relative w-full h-36 rounded overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A clean modern high-contrast mobile e-commerce checkout interface on warm cream and forest green background showing an express shipping notification banner with rounded card styling and minimalist typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqYCdV1FL32jQvKnMSyFPkpp-cm6dMLxZSlkAXhPIsEaQlg6x0MyH1bGQEtd5ivmYd9f4jf-0wCpb3HoepGHNjhJxLOGxLWFGpvWw3A7w2tlRNiAUGzv4GYpiCb9dHKbnyCROLVuDk3tQdZr9dY55_pocG2IvPyrW4xs04O35scIEPHCiZG6LPa_RCk9_bnMtr1ezVAwlcyitorGBq2CrwdBa_bPMl0M0heTQsQVS-BEG-u8LzU6_Q"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px] flex items-center justify-center p-space-md">
+<div class="bg-surface-container-lowest px-space-md py-space-sm rounded shadow-md text-center max-w-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-0.5">Simulated Component</span>
+<p class="font-title-md text-title-md text-primary font-bold tracking-tight">“Your order ships within 3 business days.”</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Requirements & Semantic Constraints (Checklist) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+                Smart Consensus Constraints
+              </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluated by GenLayer Oracles</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Rule 1 -->
+<div class="flex items-start gap-space-md p-space-md rounded bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="mt-0.5 w-5 h-5 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 shadow-[1px_1px_0px_#00170b]">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wide">
+                    Rule 1: Number Preservation
+                  </span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Must preserve integer <code class="px-1 py-0.5 rounded bg-surface-container-highest text-primary font-bold">"3"</code> exactly. Converting to spelled-out word ("tres") will trigger automated oracle score penalization.
+                  </p>
+</div>
+</div>
+<!-- Rule 2 -->
+<div class="flex items-start gap-space-md p-space-md rounded bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="mt-0.5 w-5 h-5 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 shadow-[1px_1px_0px_#00170b]">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wide">
+                    Rule 2: Semantic Nuance
+                  </span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Must translate “business days” as business/working days (<span class="text-primary font-bold italic">días hábiles</span> or <span class="text-primary font-bold italic">días laborables</span>), <strong class="text-secondary uppercase text-xs tracking-wider">NOT</strong> calendar days (<span class="italic text-error">días naturales</span>).
+                  </p>
+</div>
+</div>
+<!-- Rule 3 -->
+<div class="flex items-start gap-space-md p-space-md rounded bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="mt-0.5 w-5 h-5 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 shadow-[1px_1px_0px_#00170b]">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wide">
+                    Rule 3: Brevity Constraint
+                  </span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Target string must remain under <strong class="text-primary">60 characters</strong> for tight UI micro-button compatibility without truncating on mobile devices.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Staking Metadata Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="p-space-sm rounded bg-surface-container">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Network</span>
+<span class="font-title-md text-title-md text-primary font-bold">GenLayer v0.8</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Deposit Escrow</span>
+<span class="font-title-md text-title-md text-secondary font-bold">153.87 GEN</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Quorum Needed</span>
+<span class="font-title-md text-title-md text-primary font-bold">≥ 2 of 3 LLMs</span>
+</div>
+</div>
+</div>
+<!-- Role-Gated Action Container -->
+<div class="bg-primary text-on-primary rounded-lg shadow-xl p-space-xl relative overflow-hidden flex flex-col gap-space-lg">
+<!-- Background geometric pattern -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container rounded-full pointer-events-none opacity-50"></div>
+<!-- Assigned Translator Callout Section -->
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest/15 text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-xs">badge</span>
+                Assigned Linguist Role
+              </div>
+<span class="font-label-sm text-label-sm text-on-primary-container">Exclusivity Window: Active</span>
+</div>
+<!-- Translator Identity Card -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-primary-container p-space-md rounded">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait photo of Elena Vasquez, professional linguistics translator with warm natural lighting in front of an architectural bookshelf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ2k9fcS3JqCZ1H2Ch7yog0gpKE68BVgbWbSbjY5dOOlWh5a1C0iOdALvcJWg7yzqvtLZ-4pI4zXSy_teaI0PafIkM_r4P96VL5w9EkTI-VAweWDkMkffsOQjA08ANECR0cIDtd8L-WPhJUZFh8jmW4S6L9cdf-y17-9R8zmK-ZqKWY7fgZ_1DIPTzY2aH_RwQCZols5rjGPz-TvZOCeITpoGmUJMGaRxC5l8ecmsY9BfASHaRXOM8"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-lg text-title-lg text-on-primary font-bold">Elena Vasquez</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">elena.eth</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim select-all">
+                    0x94b3A8187F63d294821aF7556019Cd2bE0C28a1
+                  </span>
+</div>
+</div>
+<div class="flex flex-col sm:items-end text-left sm:text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Translator Reputation</span>
+<span class="font-title-md text-title-md font-bold text-tertiary-fixed">99.4% • 42 Bounties</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest/10 text-on-primary/90 font-body-sm text-body-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-base flex-shrink-0 mt-0.5">info</span>
+<span>
+<strong>You are viewing as the Assigned Translator.</strong> You have exclusive rights to draft and dispatch this submission until your block lock expires.
+              </span>
+</div>
+</div>
+<!-- Prominent Action CTA -->
+<div class="flex flex-col gap-space-sm pt-space-xs relative z-10">
+<a class="w-full flex items-center justify-center gap-space-sm bg-secondary-container hover:bg-secondary text-on-secondary-container font-headline-sm text-headline-sm uppercase px-space-xl py-space-lg rounded shadow-[4px_4px_0px_#00170b] active:translate-x-0.5 active:translate-y-0.5 transition-all text-center tracking-tight" data-path="submit-translation" href="#">
+<span>Submit Translation Now</span>
+<span class="material-symbols-outlined font-bold text-2xl">arrow_forward</span>
+</a>
+<!-- Countdown Timer & Deadline Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs text-on-primary-container font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-space-xs text-tertiary-fixed font-bold">
+<span class="material-symbols-outlined text-sm">alarm</span>
+<span>Deadline: 18 hours remaining</span>
+</div>
+<span class="text-inverse-on-surface/70">Expires Oct 24, 2025 • 18:00 UTC</span>
+</div>
+</div>
+<!-- General Visitor Read-Only Notice -->
+<div class="pt-space-sm text-on-primary/50 font-body-sm text-body-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-xs">lock_clock</span>
+<span>Read-only notice for spectators: Only wallet <code class="text-on-primary/80">0x94B...28a1</code> can broadcast payload to this contract method.</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Lifecycle Timeline & Validator Progress (5 of 12 cols = ~40-42%) -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl">
+<!-- Timeline Card -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-primary uppercase tracking-tight flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">alt_route</span>
+              Bounty Lifecycle
+            </h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">
+              Phase 2 of 4
+            </span>
+</div>
+<!-- Editorial Step Timeline -->
+<div class="relative flex flex-col gap-space-xl pl-space-lg before:content-[''] before:absolute before:left-3 before:top-3 before:bottom-3 before:w-0.5 before:bg-surface-container-highest">
+<!-- Step 1: Completed -->
+<div class="relative flex flex-col gap-space-xs">
+<!-- Marker Icon -->
+<div class="absolute -left-[31px] top-0.5 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs shadow-sm">
+<span class="material-symbols-outlined text-sm font-bold text-tertiary-fixed">check</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">
+                  Step 01 • Funded &amp; Locked
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Oct 22, 14:10
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                153.87 GEN deposited into GenLayer Escrow. Verification parameters signed by task author.
+              </p>
+<div class="mt-space-xs inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-xs">receipt_long</span>
+<span class="font-bold">TX: 0x4a18...c029</span>
+</div>
+</div>
+<!-- Step 2: Active -->
+<div class="relative flex flex-col gap-space-xs">
+<!-- Marker Icon (Active pulse) -->
+<div class="absolute -left-[31px] top-0.5 w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-xs shadow-[2px_2px_0px_#00170b] ring-4 ring-secondary-container/20">
+<span class="material-symbols-outlined text-sm font-bold">edit</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">
+                  Step 02 • Draft in Progress
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase animate-pulse">
+                  Active
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Translator assigned to <span class="font-bold text-primary">0x94b3...28a1</span>. Work in progress under zero-knowledge commit schedule.
+              </p>
+<!-- Progress indicator mini-bar -->
+<div class="mt-space-xs w-full bg-surface-container-high h-2 rounded overflow-hidden">
+<div class="bg-secondary-container h-full w-2/3"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>Drafting Stage</span>
+<span>65% time remaining</span>
+</div>
+</div>
+<!-- Step 3: Pending -->
+<div class="relative flex flex-col gap-space-xs opacity-75">
+<!-- Marker Icon -->
+<div class="absolute -left-[31px] top-0.5 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-xs">
+<span class="material-symbols-outlined text-sm">smart_toy</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">
+                  Step 03 • GenLayer Consensus
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">
+                  Pending
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                3 LLM-backed validator nodes will independently score semantic fidelity and compliance within 120 seconds of submission.
+              </p>
+</div>
+<!-- Step 4: Pending -->
+<div class="relative flex flex-col gap-space-xs opacity-60">
+<!-- Marker Icon -->
+<div class="absolute -left-[31px] top-0.5 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-xs">
+<span class="material-symbols-outlined text-sm">payments</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">
+                  Step 04 • String Promotion
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">
+                  Pending
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Verified translation added to v1.4 official library; 150 GEN unlocked directly to translator wallet via smart contract.
+              </p>
+</div>
+</div>
+</div>
+<!-- Validator Deliberation Criteria Card -->
+<div class="bg-surface-container-low rounded-lg p-space-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-bold uppercase tracking-tight flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">psychology</span>
+              GenLayer Oracle Thresholds
+            </h3>
+<span class="material-symbols-outlined text-on-surface-variant text-base">info</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Autonomous validator nodes evaluate translation payloads using non-deterministic deterministic equivalence trees:
+          </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Criterion 1 -->
+<div class="p-space-md rounded bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold uppercase">1. Meaning Preservation</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">Score ≥ 90 / 100</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Syntactic and contextual equivalence to the original English intent without hallucination.
+              </p>
+</div>
+<!-- Criterion 2 -->
+<div class="p-space-md rounded bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold uppercase">2. Constraint Adherence</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-bold uppercase">Strict Pass/Fail</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Binary check on integer '3', business day phraseology, and ≤60 character length bounds.
+              </p>
+</div>
+<!-- Criterion 3 -->
+<div class="p-space-md rounded bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold uppercase">3. Tone &amp; Grammar Consistency</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">Score ≥ 85 / 100</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Castilian Spanish standard register conforming to modern e-commerce tone guidelines.
+              </p>
+</div>
+</div>
+<!-- Validator Node Swarm Status -->
+<div class="mt-space-sm p-space-sm rounded bg-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+              Oracles Assigned: 3 LLM Nodes
+            </span>
+<span class="uppercase tracking-wider">Llama-3.3-70B • GPT-4o • Claude-3.5</span>
+</div>
+</div>
+<!-- Help / Dispute Contingency Micro-Box -->
+<div class="p-space-md rounded bg-surface-container-highest flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary uppercase font-bold">Dispute Protection</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">If validation fails, a 24h human appeal window opens.</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-secondary hover:underline flex-shrink-0" href="#">
+            Rules →
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Mock Logic for Navigation / Testing -->
+<script>
+    // Handles mock navigation to child paths if available
+    document.querySelectorAll('[data-path="submit-translation"]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        // Keeps user within standard prototyping experience
+        console.log("Navigating to submit translation flow for #TASK-0842-ES");
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-primary-container text-inverse-on-surface pt-space-2xl pb-space-lg overflow-hidden"><div class="w-full px-gutter"><div class="flex flex-wrap items-center justify-between gap-space-md pb-space-xl border-b border-primary-fixed-dim/20"><div class="flex items-center gap-space-sm"><span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary-fixed animate-ping"></span><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary-fixed">Validator Status Ticker:</span><span class="font-title-md text-title-md text-inverse-on-surface">GenLayer Validator Network Active (99.98% agreement)</span></div><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest/10 text-tertiary-fixed font-label-sm text-label-sm rounded uppercase tracking-wider"><span class="material-symbols-outlined text-sm">verified</span>Simulated Testnet Protocol</div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-space-xl py-space-2xl"><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Protocol</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="task-board" href="#">Task Board</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="create-task" href="#">Post Bounty</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="string-library" href="#">String Repositories</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Consensus Staking</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Consensus Engine</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" data-path="decision" href="#">GenLayer Deliberation</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">LLM Equivalence Oracles</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Validator Slash Engine</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Challenged Rounds</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Documentation</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Smart Contract Spec</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">i18n Schema Standard</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">GenLayer SDK</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">API References</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim font-bold">Governance &amp; Legal</span><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Protocol Disclaimers</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Decentralized License</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Privacy Framework</a><a class="font-body-md text-body-md text-inverse-on-surface/80 hover:text-tertiary-fixed transition-colors" href="#">Testnet Bug Bounty</a></div></div><div class="py-space-xl select-none pointer-events-none"><div class="font-display-xl text-[64px] sm:text-[100px] md:text-[140px] lg:text-[180px] leading-none font-bold uppercase tracking-tighter text-surface-container-lowest/[0.07] whitespace-nowrap overflow-hidden">LOCALIZATION</div></div><div class="pt-space-lg border-t border-primary-fixed-dim/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md text-inverse-on-surface/60 font-body-sm text-body-sm"><p>© 2025 LocaleBounty Foundation. Built on GenLayer Intelligent Consensus Protocol.</p><p class="font-label-sm text-label-sm uppercase tracking-wider">Contract Core: <span class="text-tertiary-fixed font-bold">0x94B7...81E3</span> • Simulated Environment</p></div></div></footer></body></html>
